@@ -28,9 +28,11 @@ jobs:
         
     - name: Install dependencies
       run: npm install
+      working-directory: ./skin-disease-detection
       
     - name: Build
       run: npm run build
+      working-directory: ./skin-disease-detection
       
     - name: Setup Pages
       uses: actions/configure-pages@v4
